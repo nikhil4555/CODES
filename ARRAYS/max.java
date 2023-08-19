@@ -13,4 +13,4 @@ public class max {
         }
         System.out.println(max);
     }
-}
+} //TIme complexity will be O(n)
