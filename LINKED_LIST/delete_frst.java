@@ -1,15 +1,16 @@
 package LINKED_LIST;
+
 class Node
 {
-    int data;
     Node next;
+    int data;
     Node(int data)
     {
         this.data=data;
         this.next=null;
     }
 }
-class linkedlist
+class LN
 {
     Node head;
     void display()
@@ -31,27 +32,45 @@ class linkedlist
         else
         {
             Node curr=head;
-            while(curr!=null)
+            while(curr.next!=null)
             {
                 curr = curr.next;
             }
+            curr.next=newnode;
         }
     }
     void delete()
     {
-        Node curr;
         if(head==null)
         {
 
         }
-        else{
-            
+        else if(head.next==null)
+        {
+            head=null;
+        }
+        else if(head.next!=null)
+        {
+            Node curr = head;
+            head=head.next;
+            curr.next=null;
         }
     }
-}
 
-public class del_last {
+}
+public class delete_frst {
     public static void main(String[] args) {
-        
+        LN ll = new LN();
+        ll.add(10);
+        ll.add(20);   
+        ll.add(30);
+        ll.add(40);
+        ll.add(50);
+        ll.add(60);
+        ll.add(70);
+        ll.display();
+        ll.delete();
+        System.out.println("");
+        ll.display();
     }
 }
