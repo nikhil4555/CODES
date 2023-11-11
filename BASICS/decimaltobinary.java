@@ -4,7 +4,7 @@ public class decimaltobinary {
     public static void main(String args[])
     {
         Scanner nkl = new Scanner(System.in);
-        System.out.println("enter the number that u want to conver to decimal");
+        System.out.println("enter the number that u want to conver to binary");
         int num = nkl.nextInt();
         int i=0;
         int arr[] = new int[32]; //as its 32 bits

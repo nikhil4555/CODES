@@ -18,3 +18,4 @@ public class p4 {
 
     }
 }
+//just give a gap to the existing right of right angle triangle to get equilateral triangle
